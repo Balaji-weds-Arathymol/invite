@@ -222,6 +222,8 @@ p{line-height:1.75}
   font-size:clamp(1.02rem,4.3vw,1.24rem);line-height:1.25}
 .deities .loc{display:block;font-family:var(--ta);color:#FFEFC9;font-size:.95rem;margin-top:.3rem;opacity:.95}
 .deities .loc.ml{font-family:var(--ml)}
+.deities li.pair-deity .nm{font-size:clamp(.92rem,3.8vw,1.08rem);line-height:1.3}
+.deities li.pair-deity .loc{font-size:.87rem}
 .invoke-close{margin:1.5rem auto 0;max-width:600px;color:#FFE7B4;font-size:.95rem}
 
 /* ---------- couple ---------- */
@@ -390,33 +392,16 @@ p{line-height:1.75}
     <svg class="frond tr" viewBox="0 0 200 520" aria-hidden="true"><use href="#leaf"/></svg>
     <svg class="bloom a" viewBox="0 0 200 200" aria-hidden="true"><use href="#blooms"/></svg>
     <div class="wrap">
-      <p class="eyebrow rv">சுவாமி துணை · ഈശ്വര കൃപയാൽ</p>
+      <p class="eyebrow rv">ஸ்ரீ கருப்பண்ண சுவாமி துணை · ഈശ്വര കൃപയാൽ</p>
       <h2 class="title rv d1">With the blessings of</h2>
 
-      <div class="mantra zoom d1">
-        <span class="om" aria-hidden="true">ॐ</span>
-        <p class="ml">ഓം നമോ വിശ്വ ബ്രഹ്മണേ നമഃ</p>
-        <p class="ta">ஓம் நமோ விஶ்வ ப்ரஹ்மணே நமஃ</p>
-        <p class="en">Om Namo Vishwa Brahmane Namaha</p>
-      </div>
-
       <ul class="deities">
-        <li class="rv d1">
+        <li class="rv d1 pair-deity">
           <svg class="lamp" viewBox="0 0 40 60" aria-hidden="true"><use href="#lamp"/></svg>
-          <span class="nm">Sri Ekambareswarar</span>
-          <span class="loc">ஸ்ரீ ஏகாம்பரேஸ்வரர்</span>
+          <span class="nm">Sri Ekambareswarar &amp; Sri Kamatchi Amman</span>
+          <span class="loc">ஸ்ரீ ஏகாம்பரேஸ்வரர் &amp; ஸ்ரீ காமாட்சி அம்மன்</span>
         </li>
         <li class="rv d2">
-          <svg class="lamp" viewBox="0 0 40 60" aria-hidden="true"><use href="#lamp"/></svg>
-          <span class="nm">Sri Kamatchi Amman</span>
-          <span class="loc">ஸ்ரீ காமாட்சி அம்மன்</span>
-        </li>
-        <li class="rv d3">
-          <svg class="lamp" viewBox="0 0 40 60" aria-hidden="true"><use href="#lamp"/></svg>
-          <span class="nm">Sri Karupanna Swamy</span>
-          <span class="loc">ஸ்ரீ கருப்பண்ண சுவாமி</span>
-        </li>
-        <li class="rv d4">
           <svg class="lamp" viewBox="0 0 40 60" aria-hidden="true"><use href="#lamp"/></svg>
           <span class="nm">Sri Subramanya Gurudeva</span>
           <span class="loc ml">ശ്രീ സുബ്രഹ്മണ്യ ഗുരുദേവ</span>
@@ -455,7 +440,7 @@ p{line-height:1.75}
           <p class="name">Arathymol A S</p>
           <p class="name-ml">ആരതിമോൾ എ എസ്</p>
           <p class="rel">daughter of</p>
-          <p class="par"><span>Sukumaran A K</span><span>Suma A S</span></p>
+          <p class="par"><span>A K Sukumaran</span><span>Suma Sukumaran</span></p>
           <p class="from">Thodupuzha, Kerala</p>
         </div>
       </div>
@@ -547,13 +532,11 @@ p{line-height:1.75}
     <svg class="frond tl" viewBox="0 0 200 520" aria-hidden="true"><use href="#leaf"/></svg>
     <svg class="bloom a" viewBox="0 0 200 200" aria-hidden="true"><use href="#blooms"/></svg>
     <div class="wrap">
-      <p class="eyebrow rv">இரு மரபுகள், ஒரு குடும்பம் · രണ്ട് പാരമ്പര്യം, ഒരു കുടുംബം</p>
+      <p class="eyebrow rv">Chennai meets Thodupuzha</p>
       <h2 class="title rv d1">One day, two traditions</h2>
       <div class="attire-card zoom d1">
         <svg class="vel" viewBox="0 0 40 60" aria-hidden="true"><use href="#vel"/></svg>
-        <p>A Tamil thaali and a Kerala pudava. Nadaswaram and chenda. Kumkum and kasavu. One banana leaf, both kitchens.</p>
-        <p class="ta">தமிழ் மரபும் கேரள மரபும் இணைந்து, ஒரு புதிய குடும்பம் பிறக்கிறது.</p>
-        <p class="ml">തമിഴ്-മലയാളി പാരമ്പര്യങ്ങൾ ഒന്നായി, ഒരു പുതിയ കുടുംബം പിറക്കുന്നു.</p>
+        <p>A Telugu mangalsutra and a Kerala pudava. Nadaswaram and chenda melam. Kumkum and kasavu gold. Two homes, one beginning.</p>
       </div>
     </div>
     <div class="edge e-kerala" style="--next:#1B0209" aria-hidden="true"></div>
@@ -566,10 +549,10 @@ p{line-height:1.75}
     <svg class="frond br" viewBox="0 0 200 520" aria-hidden="true"><use href="#leaf"/></svg>
     <div class="wrap">
       <h2 class="title rv">Your blessings are our greatest gift</h2>
-      <div class="three">
+      <!-- <div class="three">
         <p class="rv d1 ta">உங்கள் ஆசிகளே எங்களுக்கு பெரும் பரிசு.</p>
         <p class="rv d2 ml">നിങ്ങളുടെ അനുഗ്രഹമാണ് ഞങ്ങളുടെ വലിയ സമ്മാനം.</p>
-      </div>
+      </div> -->
       <p class="couple-sig rv d3">Balaji &amp; Arathymol</p>
       <p class="sig-sub rv d3">13 · 12 · 2026 — Karimkunnam, Thodupuzha</p>
     </div>

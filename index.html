@@ -197,6 +197,48 @@ h2.title::after{
 p{line-height:1.75}
 
 /* ---------- invocation ---------- */
+.pillayar-suzhi{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  color:var(--gold-lit);
+  margin:0 auto 1.4rem;
+  line-height:1;
+}
+
+.pillayar-suzhi .symbol{
+  font-family:var(--ta);
+  font-size:clamp(2.6rem,10vw,4rem);
+  font-weight:600;
+  text-shadow:0 2px 12px rgba(224,169,59,.35);
+}
+
+.pillayar-suzhi .ornament{
+  width:90px;
+  height:1px;
+  margin-top:.7rem;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    var(--gold),
+    transparent
+  );
+  position:relative;
+}
+
+.pillayar-suzhi .ornament::after{
+  content:"◆";
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  background:var(--maroon);
+  color:var(--gold);
+  padding:0 .35rem;
+  font-size:.45rem;
+}
+
 .mantra{
   position:relative;margin:0 auto 1.6rem;max-width:660px;padding:1.5rem 1.2rem 1.35rem;
   border:1px solid rgba(224,169,59,.55);
@@ -392,6 +434,10 @@ p{line-height:1.75}
     <svg class="frond tr" viewBox="0 0 200 520" aria-hidden="true"><use href="#leaf"/></svg>
     <svg class="bloom a" viewBox="0 0 200 200" aria-hidden="true"><use href="#blooms"/></svg>
     <div class="wrap">
+      <div class="pillayar-suzhi" aria-label="Pillayar Suzhi">
+        <div class="symbol">௳</div>
+        <div class="ornament"></div>
+      </div>
       <p class="eyebrow rv">ஸ்ரீ கருப்பண்ண சுவாமி துணை · ഈശ്വര കൃപയാൽ</p>
       <h2 class="title rv d1">With the blessings of</h2>
 
@@ -497,7 +543,7 @@ p{line-height:1.75}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
           Temple directions
         </a>
-        <p class="note rv d4">The ceremony takes place inside the temple. Traditional attire is much appreciated — wear whatever you are most comfortable in.</p>
+        <p class="note rv d4">The ceremony takes place inside the temple. Traditional attire is much appreciated - wear whatever you are most comfortable in.</p>
       </div>
     </div>
     <div class="edge e-leaf" style="--next:#8E1147" aria-hidden="true"></div>
@@ -521,7 +567,7 @@ p{line-height:1.75}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
           Reception directions
         </a>
-        <p class="note rv d4">Straight after the ceremony — a sadya on banana leaf, Tamil and Kerala flavours together, served through the afternoon.</p>
+        <p class="note rv d4">Straight after the ceremony - a sadya on banana leaf, with Love and Kerala flavours together, served through the afternoon.</p>
       </div>
     </div>
     <div class="edge e-gopuram" style="--next:#16532F" aria-hidden="true"></div>
